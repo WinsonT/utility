@@ -1,0 +1,471 @@
+html {
+  background-color: white;
+  --antd-wave-shadow-color: rgb(131,109,192);
+  /*scroll-behavior: smooth;*/
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PORTAL EDITABLE TITLE */
+.editable-title {
+  transition: all 0.3s;
+}
+
+.editable-title:hover {
+  background-color: #f5f5f5;
+}
+/* PORTAL EDITABLE TITLE */
+
+/* PORTAL DATE PICKER */
+.ant-calendar-date:hover,
+.ant-calendar-range .ant-calendar-in-range-cell::before {
+  background: rgb(246, 240, 255);
+}
+
+.ant-calendar-today .ant-calendar-date {
+  color: rgb(119,67,171);
+  border-color: rgb(119,67,171);
+}
+
+/* NOTE: SELECTED STYLE MUST BE DEFINED AFTER TODAY STYLE TO TAKE PRECEDENCE */
+.ant-calendar-date:active,
+.ant-calendar-selected-day .ant-calendar-date {
+  background: rgb(131,109,192);
+  color: #fff;
+}
+
+/* NOTE: MARKED STYLE MUST BE DEFINED AFTER DEFAULT STYLE TO TAKE PRECEDENCE */
+.ant-calendar-date-marked:hover {
+  background: rgb(255, 216, 209);
+}
+
+.ant-calendar-today .ant-calendar-date-marked {
+  color: tomato;
+  border-color: tomato;
+}
+
+/* NOTE: SELECTED STYLE MUST BE DEFINED AFTER TODAY STYLE TO TAKE PRECEDENCE */
+.ant-calendar-date-marked:active,
+.ant-calendar-selected-day .ant-calendar-date-marked {
+  background: rgb(255,177,163);
+  color: #fff;
+}
+
+.ant-calendar-date-marked {
+  border : 1px solid tomato;
+  /*border-radius : 50%;*/
+}
+
+.ant-calendar-range .ant-calendar-selected-start-date .ant-calendar-date:hover, 
+.ant-calendar-range .ant-calendar-selected-end-date .ant-calendar-date:hover,
+.ant-calendar-range .ant-calendar-selected-start-date .ant-calendar-date, 
+.ant-calendar-range .ant-calendar-selected-end-date .ant-calendar-date {
+  background: rgb(119, 67, 171);
+}
+
+/* END PORTAL DATE PICKER */
+
+/* PORTAL CALENDAR */
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month:hover,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-date:hover,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-month, 
+.ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-date {
+  background: rgb(246, 240, 255);
+}
+
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value, 
+.ant-fullcalendar-fullscreen .ant-fullcalendar-selected-day .ant-fullcalendar-value {
+  color: rgb(131, 109, 192);
+}
+
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-month,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-today .ant-fullcalendar-date {
+  border-top-color: rgb(131, 109, 192);
+}
+
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month:active, 
+.ant-fullcalendar-fullscreen .ant-fullcalendar-date:active {
+  background: rgba(236, 216, 249);
+}
+
+.mxp-calendar-btn:hover {
+  background: #e8e8e8;
+}
+
+.mxp-calendar-btn:focus {
+  outline: none;
+}
+
+.mxp-calendar-btn:active {
+  background: #d9d9d9;
+}
+/* END PORTAL CALENDAR */
+
+/* PORTAL READ-ONLY FORM */
+.mxp-form-read-only .ant-select-disabled:not(.mxp-form-read-only-exclude) .ant-select-selection:not(:hover){
+  background-color: transparent;
+}
+
+.mxp-form-read-only .ant-select-disabled:not(.mxp-form-read-only-exclude):not(:hover),
+.mxp-form-read-only .ant-input-number-disabled:not(.mxp-form-read-only-exclude):not(:hover),
+.mxp-form-read-only .ant-input-disabled:not(.mxp-form-read-only-exclude):not(:hover) {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent; 
+}
+/* END PORTAL READ-ONLY FORM */
+
+/* PORTAL WHITE LAYOUT */
+.ant-layout-sider,
+.ant-layout {
+  background-color: #fff;
+}
+/* END PORTAL WHITE LAYOUT */
+
+/* PORTAL RED DELETE ICON */
+.mxp-delete-icon:hover {
+  color: rgb(252, 75, 78);
+}
+/* END PORTAL RED DELETE ICON */
+
+/* PORTAL NARROW LIST PAGE TABLE */
+.list-campaign-table .ant-table-thead > tr > th,
+.list-campaign-table .ant-table-tbody > tr > td {
+  padding: 12px 16px 12px 16px;
+}
+
+.list-campaign-table .ant-table-thead > tr > th,
+.ant-table-thead > tr > th .ant-table-header-column .ant-table-column-sorters::before,
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-up, 
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-down {
+  transition: all 0s;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-up.on, 
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner .ant-table-column-sorter-down.on {
+  color: rgb(131,109,192);
+}
+
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+/* END PORTAL NARROW LIST PAGE TABLE */
+
+/* UTIL STYLES */
+/* TOOLTIP NEWLINE SUPPORT */
+.ant-tooltip {
+  white-space: pre-wrap;
+}
+/* HOVER UNDERLINE HELPER CLASS */
+.hover-underline {
+  cursor: pointer;
+}
+.hover-underline:hover {
+  text-decoration: underline;
+}
+/* INLINE DISPLAY UPLOAD LIST */
+.inline-upload .ant-upload-list {
+  display: inline-block;
+  width: 60%;
+}
+.inline-upload .ant-upload-list-item-name {
+  display: inline;
+}
+/* FIXED WIDTH TABLE */
+.fixedWidthTable table {
+  table-layout: fixed;
+}
+.fixedWidthTable .ant-table-tbody > tr > td {
+  overflow: hidden;
+  word-wrap: break-word;
+  /*word-break: break-all;*/
+}
+/* END UTIL STYLES */
+
+
+
+/* PORTAL PURPLE CREATE CAMPAIGN STEPS AND CUSTOM EDIT STYLE */
+.ant-steps-item-process .ant-steps-item-icon {
+  background: rgb(119,67,171);
+  border-color: rgb(119,67,171);
+}
+
+.campaign-steps-editing > .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after ,
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after {
+  background-color: rgb(119,67,171);
+}
+
+.campaign-steps-editing>.ant-steps-item-error>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+  background-color: rgb(245, 34, 45);
+}
+
+.ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process)>.ant-steps-item-container[role='button']:hover .ant-steps-item-icon,
+.ant-steps-item-finish .ant-steps-item-icon {
+  border-color: rgb(119,67,171);
+}
+.ant-steps .ant-steps-item:not(.ant-steps-item-active):not(.ant-steps-item-process) > .ant-steps-item-container[role='button']:hover .ant-steps-item-icon .ant-steps-icon,
+.ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-title, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-subtitle, .ant-steps .ant-steps-item:not(.ant-steps-item-active) > .ant-steps-item-container[role='button']:hover .ant-steps-item-description,
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+  color: rgb(119,67,171);
+}
+/* END PORTAL PURPLE CREATE CAMPAIGN STEPS AND CUSTOM EDIT STYLE */
+
+/* PORTAL PURPLE ANCHOR */
+.ant-anchor-link-active > .ant-anchor-link-title,
+.ant-anchor-link:hover > .ant-anchor-link-title,
+.ant-anchor-ink-ball {
+  color: rgb(131,109,192);
+  border-color: rgb(131,109,192);
+}
+/* END PORTAL PURPLE ANCHOR */
+
+/* PORTAL ACTION HOVER SHADE */
+.mxp-action:hover{
+  background-color: #d9d9d9;
+}
+/* END PORTAL ACTION HOVER SHADE */
+
+/* PORTAL SECTION UNDERLINE NAME */
+.section-header-2:hover .section-name {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* END PORTAL SECTION UNDERLINE NAME */
+
+/* PORTAL PURPLE THEME AND HIGHLIGHT (BUTTON & MENU) */
+.ant-menu:not(.ant-menu-sub) {
+  background-color: rgb(119,67,171);
+  height: 100vh;
+  width: 64px;
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border-right: 0px;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+  padding: 0 6px 0 6px !important;
+}
+
+.ant-menu-inline-collapsed > .ant-menu-item .anticon,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item .anticon,
+.ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title .anticon,
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title .anticon {
+  font-size: 24px;
+}
+
+.ant-menu-item:active, .ant-menu-submenu-title:active {
+  background: transparent;
+}
+
+.mxp-submenu:focus {
+  outline: none;
+}
+
+.ant-menu .ant-menu-item.mxp-submenu-item:hover,
+.ant-menu .ant-menu-item.mxp-submenu-item.ant-menu-item-selected {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #f3f3f3;
+}
+.mxp-submenu-item {
+  color: rgba(0, 0, 0, 0.65);
+  transition: 0s;
+  -webkit-transition: 0s; 
+}
+
+.ant-menu-vertical .ant-menu-item, 
+.ant-menu-vertical-left .ant-menu-item,
+.ant-menu-vertical-right .ant-menu-item,
+.ant-menu-inline .ant-menu-item,
+.ant-menu-vertical .ant-menu-submenu-title,
+.ant-menu-vertical-left .ant-menu-submenu-title,
+.ant-menu-vertical-right .ant-menu-submenu-title,
+.ant-menu-inline .ant-menu-submenu-title {
+  height: 32px;
+  line-height: 32px;
+  
+}
+
+.mxp-btn:not([disabled]) {
+  color: rgb(131,109,192);
+}
+
+.ant-btn:not(.ant-btn-primary):not(.ant-btn-link):not([disabled]):hover,
+.ant-btn:not(.ant-btn-primary):not(.ant-btn-link):not([disabled]):focus {
+  border-color: rgb(131,109,192);
+  color: rgb(131,109,192);
+}
+
+.ant-btn:not(.ant-btn-primary):not(.ant-btn-link):not([disabled]):active {
+  border-color: rgb(119,67,171);
+  color: rgb(119,67,171);
+}
+
+.ant-btn-primary,
+.ant-btn-primary:active,
+.ant-btn-primary:focus {
+  background-color: rgb(119,67,171);
+  border-color: rgb(119,67,171);
+  color: #fff;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu .ant-menu-item:not(.mxp-submenu-item):hover,
+.ant-btn-primary:hover,
+.ant-menu-submenu:hover,
+.mxp-submenu:focus {
+  background-color: rgb(131,109,192);
+  border-color: rgb(131,109,192);
+}
+
+.mxp-select-btn-selected {
+  border-color: rgb(131,109,192);  
+  color: rgb(131,109,192);
+}
+
+.mxp-select-btn:hover,
+.mxp-select-btn:focus {
+  color: rgb(131,109,192);
+  border-color: rgb(131,109,192);
+}
+/* END PORTAL PURPLE THEME AND HIGHLIGHT (BUTTON & MENU) */
+
+/* PORTAL FORM STYLE */
+.ant-form-item {
+  margin-bottom: 12px;
+}
+
+.ant-form-item-label {
+  font-size: 10px;
+  padding-bottom: 4px !important;
+  font-weight: 500;
+}
+
+.horizontalLabel .ant-form-item-label {
+  font-weight: 400;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-input:hover,
+.ant-input-number:hover,
+.ant-calendar-picker-input:hover,
+.ant-select-selection:hover {
+  border-color: #d9d9d9 !important;
+  background-color: #f5f5f5;
+}
+
+.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled),
+.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: rgb(246, 240, 255);
+}
+
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon, 
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon {
+  color: rgb(119,67,171);
+}
+
+.ant-select-focused .ant-select-selection, 
+:not(.ant-select-disabled) > .ant-select-selection:active,
+.ant-input:focus:not(.ant-input-disabled),
+.ant-input-number-focused:not(.ant-input-number-disabled),
+.ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled),
+:not(.ant-select-disabled) > .ant-select-selection:focus {
+  background-color: rgba(0,0,0,0);
+  border-color: rgb(131,109,192) !important;
+  box-shadow: 0 0 0 2px rgba(131,109,192, 0.2) !important;
+}
+/* END PORTAL FORM STYLE */
+
+
+/* UNUSED */
+.ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td,
+.ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row)>td,
+.ant-table-thead>tr:hover:not(.ant-table-expanded-row)>td,
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row)>td {
+  background-color: #f5f5f5;
+}
+/* END UNUSED */
+
+/* PORTAL PURPLE PAGINATION */
+.ant-pagination-item-active,
+.ant-pagination-item-active a,
+.ant-pagination-item-active:hover {
+  border-color: rgb(119,67,171) !important;
+  color: rgb(119,67,171) !important;
+}
+/* END PORTAL PURPLE PAGINATION */
+
+
+
+// ------- Login page -----------------
+.login-body {
+  background: #909090;
+  height: 100vh;
+}
+
+.login-form {
+  background: #fff;
+  width: 300px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+// } {
+//   width:500px;
+
+//   display: block;
+// }
+
+// ------- Create Target Group --------
+.dynamic-delete-button {
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  font-size: 24px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.dynamic-delete-button:hover {
+  color: #777;
+}
+
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 450px) {
+  .subtitle {
+    font-size: 28px;
+  }
+}

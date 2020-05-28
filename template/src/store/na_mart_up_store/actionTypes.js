@@ -1,0 +1,8 @@
+export const CAMPAIGN_CREATED = 'CAMPAIGN_CREATED'
+export const CAMPAIGN_UPDATED = 'CAMPAIGN_UPDATED'
+export const ERROR = 'ERROR'
+export const USER_INPUT = 'USER_INPUT'
+// export const MENU_CLICK = 'MENU_CLICK'
+// export const EDIT_CAMPAIGN = 'EDIT_CAMPAIGN'
+// export const RESET_CAMPAIGN = 'RESET_CAMPAIGN'
+export const ASSIGN_MESSAGE = 'ASSIGN_MESSAGE'

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Na Mart Up Page</title>
+    <link rel="icon" href="../content/dam/na-mart-up/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet">
+    <meta name="theme-color" content="#2A3443" />
+    <meta name="description" content="Na Mart Up Page" />
+
+    <!-- iOS -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-title" content="Na Mart Up Page" />
+
+    <!-- DMP/Adobe analytics tags -->
+    <!--<script type="text/javascript" src="//assets.adobedtm.com/e4f7734ad4cd8a290d6ba1cbb3128e9a2c7e8baf/satelliteLib-d609937da9102bc7467d98d75729afa3b0172e2d.js"></script>-->
+
+  </head>
+  <body>
+    <noscript>Na Mart Up Page</noscript>
+    <!-- IE check defined here, as index.js imports will already cause IE to fail -->
+    <script>
+      function checkIfIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+          alert("Internet explorer is not supported, please access with another browser, preferably Chrome.");
+          return true;
+        }
+      }
+      checkIfIE();
+    </script>
+    <!-- your react app will render here -->
+    <div id="root"></div>
+  </body>
+</html>
